@@ -7,21 +7,21 @@ tasks = input("Remind me to: ")
 x = tasks.split(", ")
 # variable that splits up the string into multiple inputs
 
-duration = float(input("How many minutes until I remind you? "))
-# Asks the user how frequently they want to be reminded to do their task
+for i in x:
+    duration = float(input("How many minutes until I remind you? "))
+    # Asks the user how frequently they want to be reminded to do their task
 
-if duration < 1:
-    print("Reminding you to", x[0], "in", duration, "minutes")
-# Basic grammer stuff because I'm picky. States both the reminder and how long until the reminder.
+    if duration < 1:
+        print("Reminding you to", x, "in", duration, "minutes")
+    # Basic grammer stuff because I'm picky. States both the reminder and how long until the reminder.
 
-elif duration > 1:
-    print("Reminding you to", x[0], "in", duration, "minutes")
-# Basic grammer stuff because I'm picky. States both the reminder and how long until the reminder.
+    elif duration > 1:
+        print("Reminding you to", x, "in", duration, "minutes")
+    # Basic grammer stuff because I'm picky. States both the reminder and how long until the reminder.
 
-else:
-    print("Reminding you to", x[0], "in", duration, "minutes")
-# Basic grammer stuff because I'm picky. States both the reminder and how long until the reminder.
-
+    else:
+        print("Reminding you to", x, "in", duration, "minutes")
+    # Basic grammer stuff because I'm picky. States both the reminder and how long until the reminder.
 
 duration = duration * 60
 # This converts duration from seconds to minutes
@@ -29,7 +29,7 @@ duration = duration * 60
 counter = 0
 # Variable that counts the number of reminders printed
 
-while 1 == 1:
+for p in x:
     time.sleep(duration)
     # Waits for the user input amount of time
     
