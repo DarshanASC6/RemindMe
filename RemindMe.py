@@ -11,17 +11,24 @@ for i in x:
     duration = float(input("How many minutes until I remind you? "))
     # Asks the user how frequently they want to be reminded to do their task
 
+    num_tasks = int(len(x) - 1)
+    # variable that counts the number of tasks
+
     if duration < 1:
-        print("Reminding you to", x, "in", duration, "minutes")
+        print("Reminding you to", x[num_tasks], "in", duration, "minutes")
     # Basic grammer stuff because I'm picky. States both the reminder and how long until the reminder.
 
     elif duration > 1:
-        print("Reminding you to", x, "in", duration, "minutes")
+        print("Reminding you to", x[num_tasks], "in", duration, "minutes")
     # Basic grammer stuff because I'm picky. States both the reminder and how long until the reminder.
 
     else:
-        print("Reminding you to", x, "in", duration, "minutes")
+        print("Reminding you to", x[num_tasks], "in", duration, "minutes")
     # Basic grammer stuff because I'm picky. States both the reminder and how long until the reminder.
+
+    num_tasks = num_tasks - 1
+    # if num_tasks == 0:
+    #     return
 
 duration = duration * 60
 # This converts duration from seconds to minutes
@@ -39,5 +46,5 @@ for p in x:
     counter = counter + 1
     # Increases the number of reminders
     
-    print("Reminders given to", x[0], ": ", counter)
+    print("Reminders given to", x[0], ":", counter)
     # Shows how many reminders have been given
