@@ -35,8 +35,6 @@ counter = 0
 # Variable that counts the number of reminders printed
 
 for p in x:
-    num_tasks = int(len(x) - 1)
-    
     time.sleep(duration)
     # Waits for the user input amount of time
     
@@ -49,5 +47,5 @@ for p in x:
     print("Reminders given to", x[num_tasks], ":", counter)
     # Shows how many reminders have been given
     num_tasks = num_tasks - 1
-    if num_tasks == 0:
-        num_tasks = int(len(x) - 1)
+    # if num_tasks == 0:
+    #     num_tasks = int(len(x) - 1)

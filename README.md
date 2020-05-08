@@ -12,3 +12,7 @@ Good question. I'm not completely sure myself. This entire thing would not exist
 2. Enter how long until you're reminded to do them. (Ex: How many minutes until I remind you? 5 (minutes until the reminder))
 
 3. Wait to be reminded via a pop-up window
+
+# To-Do:
+1. Fix counter so that it counts based on individual requests
+2. Get reminder function to run forever rather than just the number of times in num_task
