@@ -11,6 +11,8 @@ Good question. I'm not completely sure myself. This entire thing would not exist
 
 2. Enter how long until you're reminded to do them. (Ex: How many minutes until I remind you? 5 (minutes until the reminder))
 
+# Note: The program will ask you for time based on your last request and work backwards. For example, my requests could be "eat, sleep, drink some water" and it would ask me when I want to drink water, sleep, and eat, in that order.
+
 3. Wait to be reminded via a pop-up window
 
 # To-Do:

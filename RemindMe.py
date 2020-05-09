@@ -34,18 +34,20 @@ duration = duration * 60
 counter = 0
 # Variable that counts the number of reminders printed
 
-for p in x:
-    time.sleep(duration)
-    # Waits for the user input amount of time
+# for p in x:
+#     time.sleep(duration)
+#     # Waits for the user input amount of time
     
-    ctypes.windll.user32.MessageBoxW(0, x[num_tasks], "RemindMe.py Reminder", 0)
-    # Creates a popup message that won't go away until the user acknowledges it
+#     ctypes.windll.user32.MessageBoxW(0, x[0], "RemindMe.py Reminder", 0)
+#     # Creates a popup message that won't go away until the user acknowledges it
     
-    counter = counter + 1
-    # Increases the number of reminders
+#     counter = counter + 1
+#     # Increases the number of reminders
     
-    print("Reminders given to", x[num_tasks], ":", counter)
-    # Shows how many reminders have been given
-    num_tasks = num_tasks - 1
-    # if num_tasks == 0:
-    #     num_tasks = int(len(x) - 1)
+#     print("Reminders given to", x[0], ":", counter)
+#     # Shows how many reminders have been given
+    
+#     # num_tasks = num_tasks - 1
+#     # if num_tasks == 0:
+#     #     num_tasks = int(len(x) - 1)
+#     # The above doesn't seem to want to work good
